@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="1dp"
+        android:src="@mipmap/freddie"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="@string/app_title"
+        android:layout_gravity="center_horizontal"
+        android:textSize="8pt"
+        android:textColor="@color/turquoise"
+        android:layout_marginTop="1dp"
+        android:paddingTop="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="@string/oauth2_access_token_title"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:id="@+id/oauth2_access_token"
+        android:text="@string/oauth2_access_token"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="@string/oauth2_refresh_token_title"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:id="@+id/oauth2_refresh_token"
+        android:text="@string/oauth2_refresh_token"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="@string/oidc_subject_title"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:id="@+id/oidc_subject"
+        android:text="@string/oidc_subject"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:text="@string/button_launch"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:onClick="launchBrowser"
+        android:background="@color/dark_slate_gray"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="@string/button_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:onClick="refreshToken"
+        android:layout_marginTop="5dp"
+        android:background="@color/dark_slate_gray"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="@string/button_userinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:onClick="getUserinfo"
+        android:background="@color/dark_slate_gray"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:layout_marginTop="200dp"
+        android:text="@string/last_action_title"
+        android:paddingTop="20dp"
+        android:textColor="@color/black"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+       android:layout_marginTop="200dp"
+        android:id="@+id/last_action"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/turquoise"
+        android:enabled="true"
+        android:textColor="@color/black" />
+
+</LinearLayout>
